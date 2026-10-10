@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio profesional de DevOps e ingeniería de plataformas: CI/CD, Kubernetes, contenedores y automatización.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Kepa Azcona — DevOps Engineer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #121a2e;
+      --text: #edf2ff;
+      --muted: #a8b4cc;
+      --accent: #77e0c3;
+      --line: rgba(180, 200, 235, .17);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(ellipse at 15% 0%, #1a2a48 0, transparent 44%), var(--bg);
+      color: var(--text);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1060px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 24px 0; border-bottom: 1px solid var(--line); }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-weight: 750; letter-spacing: -.03em; }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 20px; font-size: .92rem; }
+    .hero { padding: 88px 0 72px; }
+    .eyebrow { color: var(--accent); font-size: .83rem; text-transform: uppercase; letter-spacing: .16em; font-weight: 700; }
+    h1 { max-width: 850px; margin: 16px 0; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.04; letter-spacing: -.06em; }
+    .lead { max-width: 730px; color: var(--muted); font-size: clamp(1.08rem, 2vw, 1.28rem); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button { display: inline-block; padding: 11px 17px; border: 1px solid var(--line); border-radius: 10px; font-weight: 650; }
+    .button.primary { background: var(--accent); color: #07131a; border-color: var(--accent); }
+    section { padding: 42px 0; }
+    h2 { font-size: clamp(1.65rem, 3vw, 2.2rem); line-height: 1.2; letter-spacing: -.035em; margin: 0 0 18px; }
+    .section-intro { max-width: 720px; color: var(--muted); margin-top: -5px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { background: rgba(18, 26, 46, .86); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+    .card h3 { margin: 0 0 8px; font-size: 1.12rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .tag { font-size: .83rem; color: #dce7fa; background: #202d47; border: 1px solid var(--line); padding: 4px 10px; border-radius: 99px; }
+    .timeline { border-left: 1px solid var(--line); margin-left: 7px; padding-left: 22px; display: grid; gap: 22px; }
+    .role { position: relative; }
+    .role::before { content: ""; position: absolute; left: -28px; top: 9px; width: 11px; height: 11px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 0 4px var(--bg); }
+    .role h3 { margin: 0; }
+    .role .meta { color: var(--accent); font-size: .92rem; }
+    .role p { margin: 7px 0 0; color: var(--muted); }
+    footer { margin-top: 45px; padding: 25px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    @media (max-width: 680px) {
+      .hero { padding: 62px 0 48px; }
+      .grid { grid-template-columns: 1fr; }
+      .navlinks { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Navegación principal">
+        <a class="brand" href="#inicio">Kepa Azcona</a>
+        <div class="navlinks">
+          <a href="#perfil">Perfil</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#tecnologias">Tecnologías</a>
+          <a href="#proyectos">Proyectos</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="inicio">
+      <div class="eyebrow">DevOps · CI/CD · Cloud-native</div>
+      <h1>Automatización fiable para entregar software mejor.</h1>
+      <p class="lead">Ingeniero DevOps con experiencia en automatización de pipelines, contenedores y despliegue de aplicaciones cloud-native. Trabajo con equipos de desarrollo para hacer que los procesos de build, validación y entrega sean repetibles, trazables y mantenibles.</p>
+      <div class="actions">
+        <a class="button primary" href="#experiencia">Ver experiencia</a>
+        <a class="button" href="https://github.com/KepaAzcona" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+
+    <section class="wrap" id="perfil">
+      <h2>Perfil profesional</h2>
+      <p class="section-intro">Mi experiencia se centra en la ingeniería de CI/CD para aplicaciones con muchos microservicios, la automatización con scripting y el despliegue de cargas de trabajo en Kubernetes. También he trabajado con monitorización de infraestructura y métricas de negocio.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>CI/CD y automatización</h3>
+          <p>Diseño y mantenimiento de pipelines, librerías compartidas, automatización de tareas y herramientas para agentes de ejecución.</p>
+        </article>
+        <article class="card">
+          <h3>Contenedores y despliegue</h3>
+          <p>Construcción de imágenes Docker, charts Helm y despliegues de microservicios en entornos Kubernetes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="tecnologias">
+      <h2>Tecnologías</h2>
+      <p class="section-intro">Herramientas utilizadas en distintos contextos profesionales; la experiencia concreta varía según la tecnología.</p>
+      <div class="tags">
+        <span class="tag">Jenkins</span><span class="tag">GitLab CI</span><span class="tag">Groovy</span>
+        <span class="tag">Bash</span><span class="tag">Python</span><span class="tag">Docker</span>
+        <span class="tag">Kubernetes</span><span class="tag">Helm</span><span class="tag">Spinnaker</span>
+        <span class="tag">Git</span><span class="tag">Gerrit</span><span class="tag">Artifactory / Xray</span>
+        <span class="tag">SonarQube</span><span class="tag">Trivy</span><span class="tag">Grafana</span>
+        <span class="tag">Azure / AKS</span><span class="tag">AWS</span><span class="tag">Prometheus</span>
+      </div>
+    </section>
+
+    <section class="wrap" id="experiencia">
+      <h2>Experiencia seleccionada</h2>
+      <div class="timeline">
+        <article class="role">
+          <h3>DevOps Engineer · Ericsson</h3>
+          <div class="meta">Noviembre de 2021 – actualidad</div>
+          <p>Trabajo en CI/CD para una aplicación 5G Cloud Core formada por más de 100 microservicios. Desarrollo y mantengo pipelines Jenkins, automatizaciones y componentes de CI; participo en la migración hacia GitLab CI y en los flujos de build, escaneo, despliegue y publicación de artefactos.</p>
+        </article>
+        <article class="role">
+          <h3>Experiencia DevOps / desarrollo · WebBeds</h3>
+          <div class="meta">Julio de 2018 – marzo de 2020</div>
+          <p>Trabajo con Docker, Kubernetes y Azure/AKS, Jenkins y herramientas de monitorización para infraestructura y métricas de negocio.</p>
+        </article>
+        <article class="role">
+          <h3>Experiencia en tecnología · easyJet Holidays</h3>
+          <div class="meta">Julio de 2016 – julio de 2018</div>
+          <p>Automatización y soporte de entornos con AWS, Bash, Datadog, Elasticsearch y Kibana, junto con tecnologías de aplicación y bases de datos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="proyectos">
+      <h2>Proyectos técnicos</h2>
+      <p class="section-intro">Estoy preparando proyectos reproducibles para documentar patrones de automatización, infraestructura como código y despliegues cloud-native. Añadiré aquí enlaces a repositorios públicos cuando estén listos.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Pipeline CI/CD</h3>
+          <p>Validación, construcción de imágenes, análisis de seguridad y publicación de artefactos con pasos automatizados.</p>
+        </article>
+        <article class="card">
+          <h3>Despliegue Kubernetes</h3>
+          <p>Aplicación de ejemplo desplegada con Helm, configuración por entorno y documentación de diagnóstico.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="contacto">
+      <h2>Contacto</h2>
+      <p class="section-intro">Para oportunidades profesionales y colaboración técnica, puedes consultar mi perfil de GitHub.</p>
+      <a class="button primary" href="https://github.com/KepaAzcona" target="_blank" rel="noreferrer">Contactar a través de GitHub ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year">2026</span> Kepa Azcona · Portfolio profesional · Publicado con GitHub Pages</div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
